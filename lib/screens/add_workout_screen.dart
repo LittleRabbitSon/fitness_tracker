@@ -5,8 +5,6 @@ import '../models/exercise.dart';
 import '../services/database_service.dart';
 import '../services/exercise_service.dart';
 import '../services/event_bus.dart'; // 添加导入
-// import 'package:flutter_localizations/flutter_localizations.dart';
-// import 'package:intl/intl.dart'; // 添加日期格式化支持
 
 /// 添加运动记录页面
 /// 

@@ -435,6 +435,11 @@ class _StatsScreenState extends State<StatsScreen> {
             tooltipBgColor: Colors.blue.shade50.withOpacity(0.9),
             tooltipPadding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
             tooltipMargin: 10,
+            // 确保tooltip不会超出屏幕边界
+            fitInsideHorizontally: true,
+            fitInsideVertically: false,
+            // 将方向设置为始终在上方，但会自动调整以适应屏幕
+            direction: TooltipDirection.top,
             getTooltipItem: (group, groupIndex, rod, rodIndex) {
               final stats = _weeklyStats[groupIndex];
               // 计算该周的时间范围
